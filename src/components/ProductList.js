@@ -7,29 +7,6 @@ import { Dropdown, DropdownButton } from 'react-bootstrap';
 
 export default class ProductList extends Component {
 
-    state = {
-        filterState: ''
-    }
-
-
-    highestPrice = () => {
-        this.setState( () => {
-            return {filterState: 'highestPrice'}
-        })
-    }
-
-    lowestPrice = () => {
-        this.setState( () => {
-            return {filterState: 'lowestPrice'}
-        })
-    }
-
-    coreBooks = () => {
-        this.setState( () => {
-            return {filterState: 'coreBooks'}
-        })
-    }
-
 
     render() {
         
@@ -43,9 +20,9 @@ export default class ProductList extends Component {
                         <div className='filtering'>
                         
                         <DropdownButton id='dropitdown' className='filter-btn' title="Filter By">
-                            <Dropdown.Item  href='/sortbyhighestprice' >Price: Highest to Lowest</Dropdown.Item>
-                            <Dropdown.Item href='/sortbylowestprice'>Price: Lowest to Highest</Dropdown.Item>
-                            <Dropdown.Item onClick={ () => this.coreBooks() }>Core Books</Dropdown.Item>
+                        <Dropdown.Item><Link className='filterlinks' to='/sortbyhighestprice'>Price: Highest to Lowest</Link> </Dropdown.Item> 
+                        <Dropdown.Item><Link className='filterlinks' to='/sortbylowestprice'>Price: Lowest to Highest </Link></Dropdown.Item> 
+                        <Dropdown.Item><Link className='filterlinks' to='/sortbycorebooks'>Core Books </Link></Dropdown.Item> 
                         </DropdownButton>
 
                         </div>

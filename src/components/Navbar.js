@@ -28,7 +28,7 @@ export default class Navbar extends Component {
     } 
 
 }
-
+//this is a part of styled components that u wrap around ur returned divs and is basically a stylesheet
 const NavWrapper = styled.nav`
     background: var(--navBlue);
     .nav-link{

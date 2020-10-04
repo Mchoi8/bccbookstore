@@ -101,7 +101,6 @@ class ProductProvider extends Component {
 
     getCoreBooks = (book_products) => { //return list of sorted products 
         let result = [];
-        console.log(book_products);
 
         book_products.forEach( item => { //this is how you traverse through an array of objects.
             if(item.category === 'core') result.push(item)

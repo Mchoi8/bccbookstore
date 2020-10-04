@@ -19,10 +19,10 @@ export default class SortByLowestPrice extends Component {
 
                         <div className='filtering'>
                         
-                        <DropdownButton variant='primary' className='filter-btn' title="Filter By">
-                            <Dropdown.Item  href='/sortbyhighestprice' >Price: Highest to Lowest</Dropdown.Item>
-                            <Dropdown.Item href='/sortbylowestprice'>Price: Lowest to Highest</Dropdown.Item>
-                            <Dropdown.Item href='/sortbycorebooks'>Core Books</Dropdown.Item>
+                        <DropdownButton id='dropitdown' className='filter-btn' title="Filter By">
+                            <Dropdown.Item><Link className='filterlinks' to='/sortbyhighestprice'>Price: Highest to Lowest</Link> </Dropdown.Item> 
+                            <Dropdown.Item><Link className='filterlinks' to='/sortbylowestprice'>Price: Lowest to Highest </Link></Dropdown.Item> 
+                            <Dropdown.Item><Link className='filterlinks' to='/sortbycorebooks'>Core Books </Link></Dropdown.Item> 
                         </DropdownButton>
 
                         </div>
